@@ -42,4 +42,9 @@ def ScoreFinder(list1, list2, string):
     if found == False:
         return 'player not found.'
 
+# Union
+def Union(list1, list2):
+    newlist = list1 + list2
+    return newlist
+
 
