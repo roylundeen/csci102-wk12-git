@@ -30,3 +30,16 @@ def FindWordCount(list1, string):
         if string in x:
             count += x.count(string)
     return count
+
+# ScoreFinder
+def ScoreFinder(list1, list2, string):
+    for x in range(len(list1)):
+        if (string.lower()) in ((list1[x]).lower()):
+            score = list2[x]
+            return 'OUTPUT {} got a score of {}'.format(list1[x], score)
+        else:
+            found = False
+    if found == False:
+        return 'player not found.'
+
+
