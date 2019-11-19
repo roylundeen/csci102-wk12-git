@@ -11,7 +11,7 @@ def PrintOutput(string):
 def LoadFile(string):
     with open(string, 'r') as file:
         contents = file.readlines()
-        return(contents)
+        return contents
     
 # UpdateString
 def UpdateString(string, new, index):
@@ -36,7 +36,7 @@ def ScoreFinder(list1, list2, string):
     for x in range(len(list1)):
         if (string.lower()) in ((list1[x]).lower()):
             score = list2[x]
-            return 'OUTPUT {} got a score of {}'.format(list1[x], score)
+            return '{} got a score of {}'.format(list1[x], score)
         else:
             found = False
     if found == False:
@@ -52,5 +52,16 @@ def Intersection(list1, list2):
     newlist = []
     for x in list1:
         if x in list2:
+            newlist.append(x)
+    return newlist
+
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+players1 = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+
+# NotIn
+def NotIn(list1, list2):
+    newlist = []
+    for x in list1:
+        if x not in list2:
             newlist.append(x)
     return newlist
