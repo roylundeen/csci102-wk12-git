@@ -1,3 +1,4 @@
+# https://github.com/roylundeen/csci102-wk12-git
 # Roy Lundeen
 # CSCI 102 - Section B
 # Week 12 Part A
@@ -54,9 +55,6 @@ def Intersection(list1, list2):
         if x in list2:
             newlist.append(x)
     return newlist
-
-players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
-players1 = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
 
 # NotIn
 def NotIn(list1, list2):
